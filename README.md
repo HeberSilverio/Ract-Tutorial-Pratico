@@ -29,7 +29,9 @@
 - Normalmente ficam em uma pasta chamada **components**;
 - O arquivo inicia com letras maiúscula + CamelCase; 
 - Veja o modelo:
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/HelloWorld.JPG)
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/HelloWorld.JPG" alt="Componentes React" style="max-width: 40%;">
+
+
 ``` 
 function HelloWorld() {
    return (
@@ -129,7 +131,7 @@ export default Pessoa
 - **O evento é atrelado a uma tag** que irá executá-lo;
 - Geralmente um **método** é atribuído ao evento;
 - Este método deve ser criado no componente;
-![](https:evento.JPG)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/evento.JPG)
 
 ## UseState
 - O **useState** é um hook do React;
