@@ -29,15 +29,15 @@
 - Normalmente ficam em uma pasta chamada **components**;
 - O arquivo inicia com letras maiúscula + CamelCase; 
 - Veja o modelo:
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-`` 
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/HelloWorld.JPG)
+``` 
 function HelloWorld() {
    return (
       <div>HTML</div>
    )
 }
 export default HelloWorld
-`` 
+``` 
 - Precisa ser importado no App.js da seguinte maneira:
 `import HelloWorld from './components/HelloWorld`
 - Para utilizar o componente você precisa chamar através de uma tag JSX:
@@ -51,7 +51,7 @@ export default HelloWorld
 - O valor é **passado como um atribudo** na chamada do componente;
 - E precisa ser **resgatado dentro de uma propriedade/argumento** chamada props na função de definição do componente;
 - As props são somente de leitura!
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/props1.JPG)
 ```
 function HelloWorld(props) {
    return (
@@ -68,7 +68,7 @@ export default HelloWorld
 `<HelloWorld nome="João" />`
 
 #### Desestruturando 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/desetruturando1.JPG)
 ```
 function Pessoa(props) {
    return (
@@ -83,7 +83,7 @@ function Pessoa(props) {
 export default Pessoa
 ```
 - Podemos simplesmente destruturar transformando as propriedades em variáveis:
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/desetruturando2.JPG)
 ```
 function Pessoa({nome, idade, profissão, foto}) {
    return (
@@ -97,9 +97,28 @@ function Pessoa({nome, idade, profissão, foto}) {
 }
 export default Pessoa
 ```
+
 ## Adicionando CSS
 - O **CSS** pode ser **adicionado de forma global** na aplicação, por meio do arquivo index.css por exemplo;
 - Porém é possível estilizar a nível de componentes;
 - Utilizamos o **CSS modules** para isso;
 - Basta criar um arquivo como: **Component.module.css**;
+![](https:module-css.JPG)
 - E chamar este **CSS** no componente;
+![](https:module-css-import.JPG)
+
+## Fragmentos
+- Os **React Fragments** permite a criação de um componente sem elemento pai;
+- O propósito é **descomplicar os nós do DOM**;
+- A sintaxe é **<> e </>**, não há um nome para a tag;
+- Criamos no próprio JSX;
+![](https://fragments.JPG)
+
+## Avançando em props
+- Podemos **definir tipos para as props**, realizando uma espécie de validação;
+- Definimos em um objeto chamado propTypes no próprio componente; 
+- E ainda há a possiblidade de **definir um valor padrão**;
+- Neste caso utilizamos o objeto **defaultProps**;
+![](https:propTypes1.JPG)
+![](https:propTypes2.JPG)
+![](https:propTypes3.JPG)
