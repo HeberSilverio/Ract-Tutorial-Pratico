@@ -29,6 +29,7 @@
 - Normalmente ficam em uma pasta chamada **components**;
 - O arquivo inicia com letras maiúscula + CamelCase; 
 - Veja o modelo:
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 `` 
 function HelloWorld() {
    return (
@@ -50,7 +51,8 @@ export default HelloWorld
 - O valor é **passado como um atribudo** na chamada do componente;
 - E precisa ser **resgatado dentro de uma propriedade/argumento** chamada props na função de definição do componente;
 - As props são somente de leitura!
-``
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+```
 function HelloWorld(props) {
    return (
       <div>
@@ -59,14 +61,15 @@ function HelloWorld(props) {
    )
 }
 export default HelloWorld
-``
+```
 - E deve ser chamado como um atributo:
 `<HelloWorld nome="Héber" />`
 - E pode ser reaproveitado o componente de forma dinâmica, apenas passando um novo nome como atributo na nova chamada.
 `<HelloWorld nome="João" />`
 
 #### Desestruturando 
-``
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+```
 function Pessoa(props) {
    return (
       <div>
@@ -78,9 +81,10 @@ function Pessoa(props) {
    )
 }
 export default Pessoa
-``
+```
 - Podemos simplesmente destruturar transformando as propriedades em variáveis:
-``
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+```
 function Pessoa({nome, idade, profissão, foto}) {
    return (
       <div>
@@ -92,4 +96,10 @@ function Pessoa({nome, idade, profissão, foto}) {
    )
 }
 export default Pessoa
-``
+```
+## Adicionando CSS
+- O **CSS** pode ser **adicionado de forma global** na aplicação, por meio do arquivo index.css por exemplo;
+- Porém é possível estilizar a nível de componentes;
+- Utilizamos o **CSS modules** para isso;
+- Basta criar um arquivo como: **Component.module.css**;
+- E chamar este **CSS** no componente;
