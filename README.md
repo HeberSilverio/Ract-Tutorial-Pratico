@@ -29,8 +29,7 @@
 - Normalmente ficam em uma pasta chamada **components**;
 - O arquivo inicia com letras maiúscula + CamelCase; 
 - Veja o modelo:
-<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/HelloWorld.JPG" alt="Componentes React" style="max-width: 40%;">
-
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/HelloWorld.JPG" alt="Componentes React" style="max-width: 50%;">
 
 ``` 
 function HelloWorld() {
@@ -53,7 +52,9 @@ export default HelloWorld
 - O valor é **passado como um atribudo** na chamada do componente;
 - E precisa ser **resgatado dentro de uma propriedade/argumento** chamada props na função de definição do componente;
 - As props são somente de leitura!
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/props1.JPG)
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/props1.JPG" alt="React" style="max-width: 50%;">
+
+
 ```
 function HelloWorld(props) {
    return (
@@ -70,7 +71,8 @@ export default HelloWorld
 `<HelloWorld nome="João" />`
 
 #### Desestruturando 
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/desetruturando1.JPG)
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/desetruturando1.JPG" alt="React" style="max-width: 50%;">
+
 ```
 function Pessoa(props) {
    return (
@@ -85,7 +87,8 @@ function Pessoa(props) {
 export default Pessoa
 ```
 - Podemos simplesmente destruturar transformando as propriedades em variáveis:
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/desetruturando2.JPG)
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/desetruturando2.JPG" alt="React" style="max-width: 50%;">
+
 ```
 function Pessoa({nome, idade, profissão, foto}) {
    return (
@@ -105,25 +108,33 @@ export default Pessoa
 - Porém é possível estilizar a nível de componentes;
 - Utilizamos o **CSS modules** para isso;
 - Basta criar um arquivo como: **Component.module.css**;
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/module-css.JPG)
+</br>
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/module-css.JPG" alt="React" style="max-width: 50%;">
+
 - E chamar este **CSS** no componente;
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/module-css-import.JPG)
+</br>
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/module-css-import.JPG" alt="React" style="max-width: 50%;">
+
 
 ## Fragmentos
 - Os **React Fragments** permite a criação de um componente sem elemento pai;
 - O propósito é **descomplicar os nós do DOM**;
 - A sintaxe é **<> e </>**, não há um nome para a tag;
 - Criamos no próprio JSX;
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/fragments.JPG)
+</br>
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/fragments.JPG" alt="React" style="max-width: 50%;">
+
 
 ## Avançando em props
 - Podemos **definir tipos para as props**, realizando uma espécie de validação;
 - Definimos em um objeto chamado propTypes no próprio componente; 
 - E ainda há a possiblidade de **definir um valor padrão**;
 - Neste caso utilizamos o objeto **defaultProps**;
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes1.JPG)
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes2.JPG)
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes3.JPG)
+</br>
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes1.JPG" alt="React" style="max-width: 50%;">
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes2.JPG" alt="React" style="max-width: 50%;">
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes3.JPG" alt="React" style="max-width: 50%;">
+
 
 ## Eventos
 - Os **eventos de React** são os mesmo eventos do DOM;
@@ -131,7 +142,9 @@ export default Pessoa
 - **O evento é atrelado a uma tag** que irá executá-lo;
 - Geralmente um **método** é atribuído ao evento;
 - Este método deve ser criado no componente;
-![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/evento.JPG)
+</br>
+<img src="https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/evento.JPG" alt="React" style="max-width: 50%;">
+
 
 ## UseState
 - O **useState** é um hook do React;
