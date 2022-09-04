@@ -103,22 +103,40 @@ export default Pessoa
 - Porém é possível estilizar a nível de componentes;
 - Utilizamos o **CSS modules** para isso;
 - Basta criar um arquivo como: **Component.module.css**;
-![](https:module-css.JPG)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/module-css.JPG)
 - E chamar este **CSS** no componente;
-![](https:module-css-import.JPG)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/module-css-import.JPG)
 
 ## Fragmentos
 - Os **React Fragments** permite a criação de um componente sem elemento pai;
 - O propósito é **descomplicar os nós do DOM**;
 - A sintaxe é **<> e </>**, não há um nome para a tag;
 - Criamos no próprio JSX;
-![](https://fragments.JPG)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/fragments.JPG)
 
 ## Avançando em props
 - Podemos **definir tipos para as props**, realizando uma espécie de validação;
 - Definimos em um objeto chamado propTypes no próprio componente; 
 - E ainda há a possiblidade de **definir um valor padrão**;
 - Neste caso utilizamos o objeto **defaultProps**;
-![](https:propTypes1.JPG)
-![](https:propTypes2.JPG)
-![](https:propTypes3.JPG)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes1.JPG)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes2.JPG)
+![](https://github.com/HeberSilverio/React-Tutorial-Pratico/blob/main/react-tutorial/src/dist/img/propTypes3.JPG)
+
+## Eventos
+- Os **eventos de React** são os mesmo eventos do DOM;
+- Ou seja, temos eventos para responder a um click;
+- **O evento é atrelado a uma tag** que irá executá-lo;
+- Geralmente um **método** é atribuído ao evento;
+- Este método deve ser criado no componente;
+![](https:evento.JPG)
+
+## UseState
+- O **useState** é um hook do React;
+- Com ele conseguimos **manusear o estado** de um componente de forma simples;
+- Este hook **funciona muito bem com eventos**;
+- Podemos **atrelar um evento** a mudança de state;
+
+```
+T* useState -> onChange={(e) => setName(e.target.value)}
+```
